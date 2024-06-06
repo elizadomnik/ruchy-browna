@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;  
+}
+
+.input {
+  width: 100%;
+  max-width: 10rem;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 0.5rem;
+  padding-left: 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: #9e9ea7;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(126, 126, 126, 0.1);
+ }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+  height: 100%;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+}
+
+.chart-container canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.steps-constrain-description {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 50%);
+}
+
+footer {
+  margin-top: auto;
+}
